@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-solo
-  version: "2.5.1"
+  version: 2.6.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: ca3b2e44dbb4726446941ca8d765c247123f709f051d07e62eacf97330ffde01
+  sha256: 0c7093d5e9c8a8b93c4383f4a4bbbe06bf9efd833ca55b8c035c9f878b6a9c30
 
 build:
   number: 0
@@ -25,8 +25,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }},<4.0
-    - django >=3.2
-
+    - django >=5.2
 tests:
   - python:
       imports:
