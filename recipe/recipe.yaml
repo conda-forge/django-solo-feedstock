@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-solo
-  version: 2.6.0
+  version: "2.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 0c7093d5e9c8a8b93c4383f4a4bbbe06bf9efd833ca55b8c035c9f878b6a9c30
+  sha256: 1dcd7e870c07fe1bc69d8b11f3be011db84817c7335766e497b5d169e9b575ef
 
 build:
   number: 0
